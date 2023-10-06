@@ -1,0 +1,2 @@
+# Logic_building_Industrial_project_ASSIGNMENTS
+PRACTICE ASSIGNMENTS
