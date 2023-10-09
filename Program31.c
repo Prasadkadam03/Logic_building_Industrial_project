@@ -1,4 +1,4 @@
-// Problem Statement :- Take input from user and Print "Jay Ganesh..." for input  times
+// Problem Statement :- Display "Jay Ganesh..." for 8  times
 
 #include<stdio.h>
 

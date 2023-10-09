@@ -1,4 +1,4 @@
-// Problem Statement :- Print "Jay Ganesh..." for 5 times
+// Problem Statement :- Display "Jay Ganesh..." for 5 times
 
 #include<stdio.h>
 
