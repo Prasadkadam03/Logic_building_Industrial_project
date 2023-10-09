@@ -3,6 +3,7 @@
 int Divide (int iNo1,int iNo2)
 {
     int iAns = 0;
+    
     if(iNo2 > iNo1)
     {
         return -1;
