@@ -9,7 +9,7 @@ Programs I practice during my DSA ,logic building and projects
  sequence problems
 <br>
  
- # Week 1 selection program (if_else/switch)
+ # Week 2 selection program (if_else/switch)
  <br>
  Program13-program25<br>
  selction problems
