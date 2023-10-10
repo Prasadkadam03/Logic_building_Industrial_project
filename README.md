@@ -9,9 +9,16 @@ Programs I practice during my DSA ,logic building and projects
  sequence problems
 <br>
  
- # Week 2 selection program (if_else/switch)
+ # Week 2 selection programs (if_else/switch)
  <br>
  Program13-program25<br>
  selction problems
-<br>
+<br>\
+
+ # Week 3 Loops and types of loop (use of Loop)
+ <br>
+ Program26-program40<br>
+ Numeric problems
+<br>\
+
  
