@@ -1,6 +1,7 @@
 // Problem statement : Write a program which accept one character from user and convert case of that character
 
 
+#include<stdio.h>
 // #include<ctype.h>   // for islower, isupper, tolower, toupper functions
 
 
@@ -60,5 +61,3 @@ int main()
 
     return 0;
 }
-
-#include<stdio.h>
