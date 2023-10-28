@@ -25,4 +25,9 @@ Programs I practice during my DSA ,logic building and projects
  Iteration problems
 <br>
 
+## Week 5 : Numeric problems
+ <br>
+ program41-Program46<br>
+ Iteration problems
+<br>
  
