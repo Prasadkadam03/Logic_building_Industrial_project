@@ -1,34 +1,24 @@
-// Problem statement : Print star pattern - 10 * linear
+// Problem Statement : Accept Capital character for user and return corresponding small letter.
+
 
 #include<stdio.h>
+#include<stdbool.h>
 
-void Display(int iRow , int iCol)
+char ConvertSmall(char cValue)
 {
-    int iCnt = 0;
-    for (iCnt = 1 ; iCnt <= (iRow*iCol) ; iCnt++)
-    {   
-        if (iCnt % iRow != 0)
-        {
-            printf("*\t");
-        }
-        else
-        {
-            printf("*\t\n");
-        }
-    }
-    printf("\n");
+    
+        return cValue + 32;
 }
 int main()
 {
-    int iNo1= 0,iNo2 = 0;
+    char ch = '\0', cRet = '\0';
+    
+    printf("Enter the Capital character : \n");
+    scanf("%c",&ch);
 
-    printf("Enter number of rows : \n");
-    scanf("%d",&iNo1);
-
-    printf("Enter number of columns : \n");
-    scanf("%d",&iNo2);
-
-    Display(iNo1,iNo2);
+    cRet = ConvertSmall(ch);
+    
+    printf("Converted small letter is : %c \n ",cRet);
 
     return 0;
 }
