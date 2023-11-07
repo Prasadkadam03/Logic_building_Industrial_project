@@ -40,7 +40,6 @@ int main()
 
     pobjDisplay(); 
 
-    delete pobj;
 
     return 0;
 }
