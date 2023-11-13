@@ -1,7 +1,6 @@
 // Problem Statement : Print String.
 
 
-
 #include<iostream>
 using namespace std;
 
@@ -44,10 +43,11 @@ class String
 
 int main()
 {
-    String sobj(30);
+    String *sobj = new String(30);
 
-    sobj.Accept();
-    sobj.Display();
+    sobj->Accept();
+    sobj->Display();
   
+    delete sobj;
     return 0;
 }
