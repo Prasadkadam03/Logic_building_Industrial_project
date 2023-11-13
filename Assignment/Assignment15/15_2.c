@@ -1,4 +1,4 @@
-// Problem statement : Accept N numbers and no from users and return its frequency.
+// Problem statement : Accept N numbers and no from users and return 1st occurence.
 
 #include<stdio.h>
 #include<stdlib.h>
