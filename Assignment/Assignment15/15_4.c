@@ -3,7 +3,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-
 void Display(int Arr[],int iLength, int iStart ,int iEnd)
 {
     int iCnt = 0;

@@ -3,7 +3,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-
 int Product(int Arr[],int iLength)
 {
     int iCnt = 0,iMultiOdd = 1;

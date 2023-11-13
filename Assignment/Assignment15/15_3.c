@@ -3,7 +3,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-
 int FirstOcc(int Arr[],int iLength, int iNo)
 {
     int iCnt = 0;
