@@ -1,4 +1,4 @@
-// Added Insert last
+// Added Delete first and Delete Last
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -72,6 +72,52 @@ void InsertLast(PPNODE Head , int No)
     }
 }
 
+void DeleteFirst(PPNODE Head)
+{
+    PNODE Temp = *Head;
+
+    if(*Head == NULL)       // Case 1
+    {
+        return;
+
+    }
+    else if((*Head) -> next == NULL)    // Case 2
+    {
+        free(*Head);
+        *Head = NULL;
+    }
+    else            // Case 3
+    {
+        *Head = (*Head) -> next;
+        free(Temp);
+    }
+
+}
+
+DeleteLast(PPNODE Head)
+{
+    PNODE Temp = *Head;
+    if(*Head == NULL)       // Case 1
+    {
+        return;
+
+    }
+    else if((*Head) -> next == NULL)    // Case 2
+    {
+        free(*Head);
+        *Head = NULL;
+    }
+    else            // Case 3
+    {
+        while(Temp -> next -> next != NULL)
+        {
+            Temp = Temp -> next;
+        }
+        free(Temp -> next);
+        Temp -> next = NULL;
+    }
+}
+
 void Display(PNODE Head)
 {
     printf("Elements of Linked List are : \n");
@@ -111,7 +157,6 @@ int main()
     InsertFirst( &First, 11);
 
     Display(First);
-
     iRet = Count(First);
     printf("Number of nodes are : %d \n", iRet);
 
@@ -119,7 +164,18 @@ int main()
     InsertLast( &First, 151);
 
     Display(First);
+    iRet = Count(First);
+    printf("Number of nodes are : %d \n", iRet);
 
+    DeleteFirst(&First);
+
+    Display(First);
+    iRet = Count(First);
+    printf("Number of nodes are : %d \n", iRet);
+
+    DeleteLast(&First);
+
+    Display(First);
     iRet = Count(First);
     printf("Number of nodes are : %d \n", iRet);
 
