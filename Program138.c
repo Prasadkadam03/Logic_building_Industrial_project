@@ -92,7 +92,7 @@ void DeleteFirst(PPNODE Head)
 
 }
 
-DeleteLast(PPNODE Head)
+void DeleteLast(PPNODE Head)
 {
     PNODE Temp = *Head;
     if( *Head == NULL)       // Case 1
@@ -223,28 +223,46 @@ int main()
     PNODE First = NULL;
     int iRet = 0;
 
-    InsertFirst( &First, 101);
-    InsertFirst( &First, 111);
-    InsertFirst( &First, 51);
-    InsertFirst( &First, 21);
-    InsertFirst( &First, 11);
-    InsertLast( &First, 121);
+    InsertFirst(&First,51);
+    InsertFirst(&First,21);
+    InsertFirst(&First,11);
 
     Display(First);
     iRet = Count(First);
-    printf("Number of nodes are : %d \n", iRet);
+    printf("Number of linked list is : %d\n",iRet);
 
-    InsertAtPos(&First , 105 , 5 );
-
-    Display(First);
-    iRet = Count(First);
-    printf("Number of nodes are : %d \n", iRet);
-
-    DeleteAtPos(&First , 5 );
+    InsertLast(&First, 111);
+    InsertLast(&First, 121);
+    InsertLast(&First, 151);
 
     Display(First);
     iRet = Count(First);
-    printf("Number of nodes are : %d \n", iRet);
+    printf("Number of linked list is : %d\n",iRet);
+
+    InsertAtPos(&First,105,5);
+
+    Display(First);
+    iRet = Count(First);
+    printf("Number of linked list is : %d\n",iRet);
+    
+    DeleteAtPos(&First,5);
+
+    Display(First);
+    iRet = Count(First);
+    printf("Number of linked list is : %d\n",iRet);
+
+    DeleteFirst(&First);
+
+    Display(First);
+    iRet = Count(First);
+    printf("Number of linked list is : %d\n",iRet);
+
+    DeleteLast(&First);
+
+    Display(First);
+    iRet = Count(First);
+    printf("Number of linked list is : %d\n",iRet);
+
 
     return 0;
 }
