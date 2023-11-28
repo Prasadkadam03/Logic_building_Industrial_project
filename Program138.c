@@ -117,7 +117,7 @@ void DeleteLast(PPNODE Head)
 
 void Display(PNODE Head)
 {
-    printf("Elements of Linked List are : \n");
+    printf("\nElements of Linked List are : \n");
 
     while(Head != NULL)
     {
@@ -266,3 +266,29 @@ int main()
 
     return 0;
 }
+
+/*
+Elements of Linked List are :
+| 11 | ->| 21 | ->| 51 | ->NULL
+Number of linked list is : 3
+
+Elements of Linked List are :
+| 11 | ->| 21 | ->| 51 | ->| 111 | ->| 121 | ->| 151 | ->NULL
+Number of linked list is : 6
+
+Elements of Linked List are :
+| 11 | ->| 21 | ->| 51 | ->| 111 | ->| 105 | ->| 121 | ->| 151 | ->NULL
+Number of linked list is : 7
+
+Elements of Linked List are :
+| 11 | ->| 21 | ->| 51 | ->| 111 | ->| 121 | ->| 151 | ->NULL
+Number of linked list is : 6
+
+Elements of Linked List are :
+| 21 | ->| 51 | ->| 111 | ->| 121 | ->| 151 | ->NULL
+Number of linked list is : 5
+
+Elements of Linked List are :
+| 21 | ->| 51 | ->| 111 | ->| 121 | ->NULL
+Number of linked list is : 4
+*/
