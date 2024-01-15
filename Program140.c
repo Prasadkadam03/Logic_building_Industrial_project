@@ -72,8 +72,6 @@ void DeleteFirst(PPNODE Head, PPNODE Tail)
         free((*Tail) -> next);
         (*Tail) -> next = *Head;
     }
-
-
 }
 
 void DeleteLast(PPNODE Head, PPNODE Tail)
@@ -119,7 +117,6 @@ void Display(PNODE Head, PNODE Tail)
     }
 
     printf(" Address of First node \n");
-
 }
 
 int Count(PNODE Head, PNODE Tail)
@@ -134,7 +131,6 @@ int Count(PNODE Head, PNODE Tail)
 
         }while(Head != Tail -> next);
     }
-
     return iCnt;
 }
 
