@@ -140,12 +140,74 @@ int Count(PNODE Head, PNODE Tail)
 
 void InsertAtPos(PPNODE Head, PPNODE Tail, int No, int iPos)
 {
+    int size = Count(*Head , *Tail);
+    int i = 0;
 
+    PNODE newn = NULL;
+
+    PNODE temp = *Head;
+
+    if ((iPos < 1) || (iPos > size+1))
+    {
+        printf("Invalid position\n");
+    }
+
+    if(iPos == 1)
+    {
+        InsertFirst(Head, Tail, No);
+    }
+    else if(iPos == size+1)
+    {
+        InsertLast(Head, Tail, No);
+    }
+    else
+    {
+        newn = (PNODE)malloc(sizeof(NODE));
+        newn -> data = No;
+        newn -> next = NULL;
+
+        for(i = 1; i<iPos-1; i++)
+        {
+            temp = temp -> next;
+        }
+
+        newn -> next = temp -> next;
+        temp -> next = newn;
+    }
 }
 
 void DeleteAtPos(PPNODE Head, PPNODE Tail, int iPos)
 {
+    int size = Count(*Head , *Tail);
+    int i = 0;
+    PNODE targetednode = NULL;
 
+    PNODE temp = *Head;
+
+    if ((iPos < 1) || (iPos > size))
+    {
+        printf("Invalid position\n");
+    }
+
+    if(iPos == 1)
+    {
+        DeleteFirst(Head, Tail);
+    }
+    else if(iPos == size)
+    {
+        DeleteLast(Head, Tail);
+    }
+    else
+    {
+        for(i = 1; i<iPos-1; i++)
+        {
+            temp = temp -> next;
+        }
+        targetednode = temp -> next;
+        temp -> next = temp -> next -> next;
+        free(targetednode);
+
+    }
 }
 
 int main()
@@ -166,6 +228,16 @@ int main()
     InsertLast(&First, &Last, 101);
     InsertLast(&First, &Last, 121);
 
+    Display(First, Last);
+    iRet = Count(First, Last);
+    printf("Number of elements are : %d\n",iRet);
+
+    InsertAtPos(&First, &Last , 105 , 5);
+    Display(First, Last);
+    iRet = Count(First, Last);
+    printf("Number of elements are : %d\n",iRet);
+    
+    DeleteAtPos(&First, &Last , 5);
     Display(First, Last);
     iRet = Count(First, Last);
     printf("Number of elements are : %d\n",iRet);
