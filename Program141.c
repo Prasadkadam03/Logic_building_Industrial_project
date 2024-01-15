@@ -1,6 +1,5 @@
 // Doubly circular linked list
 
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -25,7 +24,6 @@ void InsertFirst(PPNODE Head, PPNODE Tail,int iNo)
     {
         *Head = newn;
         *Tail = newn;
-
     }
     else
     {
